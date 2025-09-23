@@ -8,14 +8,7 @@
 ## Aim
 Perform a heuristic evaluation comparing the user experience (UX) of two competing e-commerce websites (Amazon.in and Flipkart). Identify usability issues using Nielsen’s 10 usability heuristics, propose prioritized changes, and implement a minimal front-end prototype (HTML/CSS/JS snippets) that addresses selected issues. Prepare a lab report and push the project to a GitHub repository.
 
----
 
-## Scope
-- **Platforms evaluated**: Desktop web experiences of Amazon.in and Flipkart (product search, product listing, product details, cart flow).  
-- **Method**: Expert heuristic evaluation (3 evaluators hypothetical — consolidated findings), severity ratings and recommended fixes.  
-- **Deliverables**: Lab report PDF, GitHub repo with prototype folder and README.  
-
----
 
 ## Algorithm / Method (Step-by-step)
 1. Define context & tasks — search, listing, PDP, add to cart, checkout.  
@@ -31,10 +24,79 @@ Perform a heuristic evaluation comparing the user experience (UX) of two competi
 
 ## Heuristic Evaluation — Issues & Fixes
 
-### Problem A — Losing filter & scroll state when returning from PDP (Flipkart) — *Severity 3*
-**Issue**: Filters/scroll lost when returning → frustration.  
-**Fix**: Persist state in URL + `sessionStorage`.  
+1. Visibility of System Status
 
+Zomato: Shows clear order tracking, but sometimes restaurant availability status is inconsistent.
+
+Swiggy: Real-time updates during delivery are very clear (e.g., rider location tracking).
+✅ Swiggy leads.
+
+2. Match Between System and Real World
+
+Zomato: Uses familiar restaurant-like categorization (e.g., "Dine-in," "Delivery").
+
+Swiggy: Uses casual, conversational tone like “What’s on your mind?” — relatable for users.
+✅ Swiggy slightly better.
+
+3. User Control and Freedom
+
+Zomato: Easy navigation, but fewer undo/cancel options during checkout.
+
+Swiggy: Allows easy cart edits, address switching, and cancelling orders (within time limit).
+✅ Swiggy is stronger.
+
+4. Consistency and Standards
+
+Zomato: Icons and layouts are consistent but sometimes cluttered with promotions.
+
+Swiggy: More consistent design patterns, cleaner cart and checkout experience.
+✅ Swiggy better maintained.
+
+5. Error Prevention
+
+Zomato: Sometimes allows adding unavailable items (error shows later).
+
+Swiggy: Blocks unavailable items upfront, minimizing user frustration.
+✅ Swiggy wins.
+
+6. Recognition Rather Than Recall
+
+Zomato: Good use of previous orders and search suggestions.
+
+Swiggy: Strong recommendations based on history, clear shortcuts.
+⚖️ Both are competitive here.
+
+7. Flexibility and Efficiency of Use
+
+Zomato: Has shortcuts like “Repeat last order.”
+
+Swiggy: More flexible with filters (veg-only toggle, delivery time, offers).
+✅ Swiggy offers more efficiency.
+
+8. Aesthetic and Minimalist Design
+
+Zomato: Bold visuals, but too many ads/offers clutter interface.
+
+Swiggy: Cleaner, minimalist design, more white space.
+✅ Swiggy leads.
+
+9. Help Users Recognize, Diagnose, and Recover from Errors
+
+Zomato: Error messages exist but are vague (“Something went wrong”).
+
+Swiggy: More specific error messages (e.g., “Restaurant closed” or “Payment failed”).
+✅ Swiggy better.
+
+10. Help and Documentation
+
+Zomato: Help section available but less intuitive.
+
+Swiggy: Better structured FAQs and customer support integration.
+✅ Swiggy leads.
 
 ## OUTPUT:
-Heuristic Evaluation of Competing Food Websites: Swiggy vs Zomato is implemented successfully.
+Comparison Summary:
+
+Swiggy outperforms Zomato in most heuristics — especially in error prevention, aesthetics, and system feedback.
+
+Zomato is visually appealing but suffers from clutter and weaker error handling.
